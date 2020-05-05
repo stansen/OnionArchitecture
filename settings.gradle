@@ -1,0 +1,3 @@
+rootProject.name='BaseArchitecture'
+include ':app'
+include ':app:onionshell'

@@ -98,7 +98,7 @@ object OnionLog {
     }
 
     /** Log a warning exception and a message with optional format args.  */
-    fun w(
+    inline fun w(
         isEncrypted: Boolean,
         t: Throwable?,
         message: String?,

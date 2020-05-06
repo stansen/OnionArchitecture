@@ -17,6 +17,7 @@ class MainActivity : AppCompatActivity() {
 //        logd { "On create" }
 //        logdN("a")
 //        logdN("oncreate")
+        button.apply {  }
         button.setOnClickListener {
 //            logd { "On click" }
             setLogTag("OnClick")

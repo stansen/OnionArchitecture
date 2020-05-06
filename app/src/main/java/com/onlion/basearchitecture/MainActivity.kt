@@ -21,6 +21,7 @@ class MainActivity : AppCompatActivity() {
 //            logd { "On click" }
             setLogTag("OnClick")
             logd("onclick")
+            logdN("dfasdfsf")
         }
 
     }

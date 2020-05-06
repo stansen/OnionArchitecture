@@ -103,8 +103,10 @@ abstract class BaseEncryptedLogImpl : ILog() {
     }
 
     override fun initLog(isDebug: Boolean,initParam: Any?) {
-        (initParam as BaseEncryptedInitParam).apply {
-            initXlog(context,isDebug,logFilePath,encryptKey)
+        if (initParam is BaseEncryptedInitParam){
+            initParam.apply {   initXlog(context,isDebug,logFilePath,encryptKey) }
+        }else{
+            throw Exception("if you use BaseEncryptedLogImpl,then initParam must be a BaseEncryptedInitParam or it`s subclass")
         }
     }
 

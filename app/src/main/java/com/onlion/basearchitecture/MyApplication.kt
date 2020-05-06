@@ -11,7 +11,6 @@ class MyApplication : Application() {
     override fun onCreate() {
         super.onCreate()
         initLogger(BuildConfig.DEBUG)
-        Timber.plant(Timber.DebugTree())
     }
 
 }

@@ -5,6 +5,7 @@ import android.os.Build
 import android.util.Log
 import com.onlion.onionshell.file.OnionFile
 import com.tencent.mars.xlog.Xlog
+import org.jetbrains.annotations.NotNull
 import java.util.regex.Pattern
 
 const val ONION_LOG = "onionlog"
@@ -143,7 +144,7 @@ abstract class BaseEncryptedLogImpl : ILog() {
 }
 
 class BaseEncryptedInitParam(
-    val context: Context ,
+    @NotNull val context: Context,
     val logFilePath: String?,
     val encryptKey: String? = null
 )
